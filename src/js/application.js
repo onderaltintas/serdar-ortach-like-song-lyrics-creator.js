@@ -36,7 +36,7 @@ SongCreator.prototype.createLyrics = function() {
   // FIXME Cloning arrays is not working with slice. Probably array of arrays are working dif. Fix at normal time instead of using JSON.stringify...
   var firstPartWordsClone = JSON.parse(JSON.stringify(this.firstPartWords));
   var secondPartWordsClone = JSON.parse(JSON.stringify(this.secondPartWords));
-  var chorusWordsClone = JSON.parse(JSON.stringify(this.chorusWords);
+  var chorusWordsClone = JSON.parse(JSON.stringify(this.chorusWords));
   
   for (var i = 0; i < 4; i++) {
     firstPart.push(createSentence(firstPartWordsClone));
