@@ -34,20 +34,20 @@ SongCreator.prototype.createLyrics = function() {
   var secondPart = [];
   var chorus = [];
   
-  var firstPartClone = firstPart.slice(0);
-  var secondPartClone = firstPart.slice(0);
-  var chorusClone = firstPart.slice(0);
+  var firstPartWordsClone = this.firstPartWords.slice(0);
+  var secondPartWordsClone = this.secondPartWords.slice(0);
+  var chorusWordsClone = this.chorusWords.slice(0);
   
   for (var i = 0; i < 4; i++) {
-    firstPart.push(createSentence(firstPartClone));
+    firstPart.push(createSentence(firstPartWordsClone));
   }
 
   for (var i = 0; i < 4; i++) {
-    secondPart.push(createSentence(secondPartClone));
+    secondPart.push(createSentence(secondPartWordsClone));
   }
 
   for (var i = 0; i < 2; i++) {
-    chorus.push(createSentence(chorusClone));
+    chorus.push(createSentence(chorusWordsClone));
   }
 
   return [firstPart, secondPart, chorus];
